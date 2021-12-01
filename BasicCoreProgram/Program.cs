@@ -6,7 +6,7 @@ namespace BasicCoreProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. Leapyear \n 3. PowofTwo \n 4. Harmonic\n 5. prime factor\n 6. Exit");
+            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. Leapyear \n 3. PowofTwo \n 4. Harmonic\n 5. prime factor\n 6. Swappingnumber\n Exit");
             
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
@@ -34,9 +34,13 @@ namespace BasicCoreProblems
                         BasicPrograms basicPrograms = new BasicPrograms();
                         basicPrograms.Prime();
                         break;
-
-
                     case 6:
+                        BasicPrograms swap = new BasicPrograms();
+                        swap.SwappingNumber();
+                        break;
+
+
+                    case 7:
                         flag = false;
                         break;
                 }
