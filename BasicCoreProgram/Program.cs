@@ -6,7 +6,7 @@ namespace BasicCoreProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. Leapyear \n 3. PowofTwo \n 4. Exit");
+            Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. Leapyear \n 3. PowofTwo \n 4. Harmonic\n 5. Exit");
             
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
@@ -26,9 +26,13 @@ namespace BasicCoreProblems
                         BasicPrograms res = new BasicPrograms();
                         res.PowerOfTwo();
                         break;
-
-
                     case 4:
+                        BasicPrograms sum = new BasicPrograms();
+                        sum.Harmonic();
+                        break;
+
+
+                    case 5:
                         flag = false;
                         break;
                 }
